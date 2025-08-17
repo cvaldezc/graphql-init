@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "rootDirs": ["src"],
+    "outDir": "./dist",
+    "lib": ["es2023"],
+    "module": "esnext",
+    "target": "es2023",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "types": ["node"],
+    "strict": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "ts-node": {
+      "esm": true,
+      "experimentalSpecifierResolution": "node"
+    }
+}
