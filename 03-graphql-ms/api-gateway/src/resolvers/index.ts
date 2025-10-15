@@ -1,8 +1,11 @@
-import { booksQuery } from "./booksResolver";
+import { EventBrokerMutation } from "./eventBroker.mutation";
 
  
 export const resolvers = {
     Query: {
-        ...booksQuery 
-    } 
+        service: () => "API Gateway"
+    },
+    Mutation: {
+        ...EventBrokerMutation
+    }
 }
